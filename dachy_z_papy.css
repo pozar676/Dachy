@@ -1,0 +1,59 @@
+.red{
+    background-color: #f00;
+}
+.blue{
+    background-color: #00f;
+}
+.green{
+    background-color: #0f0;
+}
+body{
+    overflow-x: hidden;
+}
+
+.sticky{
+    position: fixed;
+    left: 10px;
+    z-index: 1;
+    width: 100%;
+    background-color: #fffa;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 0 5px #000;
+}
+
+.hero{
+    background-image: url(./dachy_z_papy/img/Resized_20220901_165605.JPG);
+    background-position: center;
+    background-size: cover;
+    padding: 20em 0;
+    width: 120%;
+    position: relative;
+    left: -90px;
+    z-index: 0;
+    
+}
+.cards_holder{
+    margin: 0 10em;
+}
+.cards{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px #000a;
+    transition: .2s linear;
+    cursor: pointer;
+
+}
+.cards:hover{
+    transform: scale(1.01);
+}
+.fb{
+    opacity: 70%;
+    transition: .1s linear;
+}
+.fb:hover{
+    opacity: 100%;
+    transform: scale(1.02);
+}
+.round-top{
+    border-radius: 20px 20px 0 0;
+}
