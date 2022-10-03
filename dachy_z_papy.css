@@ -41,6 +41,7 @@ body{
     box-shadow: 10px 10px 30px #000a;
     transition: .2s linear;
     cursor: pointer;
+    overflow: hidden;
 
 }
 .cards:hover{
@@ -55,5 +56,35 @@ body{
     transform: scale(1.02);
 }
 .round-top{
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0px ;
+    height: 120%;
+    position: relative;
+    top:50px;
+    clip-path: url(./dachy_z_papy/img/clip.svg);
+    z-index: 0;
+}
+.round-buttom{
+    border-radius: 0px 20px 20px 20px ;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px -10px 20px  #000a;
+    z-index: 0;
+   
+    
+}
+.round-buttom::after{
+    content:'';
+    width: 50px;
+    height: 50px;
+    background-image: url(./dachy_z_papy/img/clip.png);
+    background-size: cover;
+    /* background-color: #fff; */
+    display: inline-flex;
+    position: absolute;
+    z-index: 2;
+    top: -50px;
+}
+
+.bg-whitre{
+    background-color: #000;
 }
